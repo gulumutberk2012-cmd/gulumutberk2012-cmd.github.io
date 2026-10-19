@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Umut Berk Gül hakkında bilgi edinin. Enerji teknolojileri, SCADAWATT ve Ar-Ge alanlarına ilgi duyan genç bir teknoloji meraklısı.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Umut Berk Gül | Kişisel Web Sitesi</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #121d30;
+      --text: #f3f6fc;
+      --muted: #aab7ca;
+      --blue: #66a8ff;
+      --line: #26354b;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1040px, 90%); margin: auto; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11,18,32,.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+    nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+    .brand { font-weight: 800; font-size: 19px; }
+    .brand span { color: var(--blue); }
+    .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .nav-links a { color: var(--muted); font-size: 14px; }
+    .nav-links a:hover { color: var(--blue); }
+    .hero { padding: 100px 0 85px; }
+    .tag {
+      display: inline-block;
+      border: 1px solid #31517a;
+      background: #142641;
+      color: #a9d0ff;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+      margin: 22px 0 18px;
+    }
+    h1 span { color: var(--blue); }
+    .hero p { color: var(--muted); max-width: 650px; font-size: 18px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      font-weight: 700;
+    }
+    .btn-primary { background: var(--blue); color: #07111f; border-color: var(--blue); }
+    section { padding: 58px 0; }
+    .section-title { font-size: 29px; margin: 0 0 10px; }
+    .section-desc { color: var(--muted); margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      padding: 23px;
+      border-radius: 16px;
+    }
+    .card h3 { margin-top: 0; }
+    .card p { color: var(--muted); margin-bottom: 0; }
+    .number { font-size: 27px; margin-bottom: 7px; }
+    .about-text { max-width: 760px; color: var(--muted); }
+    .highlight { color: var(--blue); font-weight: 700; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 25px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 560px) {
+      nav { align-items: flex-start; }
+      .nav-links { gap: 12px; }
+      .hero { padding: 70px 0 55px; }
+      h1 { letter-spacing: -1px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#anasayfa">Umut Berk <span>Gül</span></a>
+      <div class="nav-links">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#ilgi-alanlarim">İlgi Alanlarım</a>
+        <a href="#hedeflerim">Hedeflerim</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="anasayfa">
+      <div class="container">
+        <span class="tag">Kişisel Web Sitesi</span>
+        <h1>Merhaba, ben<br><span>Umut Berk Gül.</span></h1>
+        <p>Teknolojiye, enerji sistemlerine ve yeni fikirler geliştirmeye ilgi duyan genç bir teknoloji meraklısıyım. Öğrenerek ve kendimi geliştirerek geleceğe hazırlanıyorum.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#hakkimda">Beni Tanı</a>
+          <a class="btn" href="#ilgi-alanlarim">İlgi Alanlarım</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="hakkimda">
+      <div class="container">
+        <h2 class="section-title">Hakkımda</h2>
+        <p class="section-desc">Kısaca ben ve ilgi duyduğum alanlar.</p>
+        <p class="about-text">Ben Umut Berk Gül, 15 yaşındayım. Teknoloji dünyasını keşfetmeyi, enerji alanındaki gelişmeleri takip etmeyi ve yeni şeyler öğrenmeyi seviyorum. Bayraktar Solar Enerji ve SCADAWATT ile ilgili çalışmalar ve teknolojiler ilgimi çekiyor. Ar-Ge ortamını tanımak ve bu alandaki bilgimi geliştirmek istiyorum.</p>
+      </div>
+    </section>
+
+    <section id="ilgi-alanlarim">
+      <div class="container">
+        <h2 class="section-title">İlgi Alanlarım</h2>
+        <p class="section-desc">Merak ettiğim ve kendimi geliştirmek istediğim konular.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="number">☀️</div>
+            <h3>Güneş Enerjisi</h3>
+            <p>Yenilenebilir enerji sistemlerini ve güneş enerjisinin geleceğini öğrenmek.</p>
+          </article>
+          <article class="card">
+            <div class="number">⚡</div>
+            <h3>SCADAWATT</h3>
+            <p>Enerji teknolojileri ve SCADAWATT ile ilgili sistemleri tanımak ve öğrenmek.</p>
+          </article>
+          <article class="card">
+            <div class="number">🔬</div>
+            <h3>Ar-Ge</h3>
+            <p>Araştırma, geliştirme ve problem çözme yaklaşımını keşfetmek.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="hedeflerim">
+      <div class="container">
+        <h2 class="section-title">Hedeflerim</h2>
+        <p class="about-text">Kendimi teknoloji ve enerji alanlarında geliştirmek, yeni bilgiler edinmek ve gelecekte faydalı projelerde yer almak istiyorum. Her gün yeni bir şey öğrenmenin beni hedeflerime yaklaştırdığına inanıyorum.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Öğrenmek</h3>
+            <p>Yeni teknolojileri araştırmak ve bilgimi artırmak.</p>
+          </article>
+          <article class="card">
+            <h3>Gelişmek</h3>
+            <p>Analitik düşünme ve problem çözme becerilerimi güçlendirmek.</p>
+          </article>
+          <article class="card">
+            <h3>Üretmek</h3>
+            <p>İleride öğrendiklerimi faydalı fikirlere ve projelere dönüştürmek.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Umut Berk Gül · Kişisel web sitesi</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
